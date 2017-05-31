@@ -55,7 +55,7 @@ public final class QueryUtils {
             for (int i = 0; i < list.length(); i++) {
                 JSONObject e = list.getJSONObject(i).getJSONObject("properties");
                 Earthquake earthquake = new Earthquake(
-                        e.getString("place"), e.getDouble("mag"), e.getLong("time")
+                        e.getString("place"), e.getDouble("mag"), e.getLong("time"), e.getString("url")
                 );
 
                 earthquakes.add(earthquake);

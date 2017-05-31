@@ -8,33 +8,29 @@ public class Earthquake {
     private String mLocation;
     private double mMagnitude;
     private long  mDate;
+    private String mUrl;
 
-    public Earthquake(String eLocation, double eMagnitude, long eDate)
+    public Earthquake(String eLocation, double eMagnitude, long eDate, String eUrl)
     {
         mLocation = eLocation;
         mMagnitude = eMagnitude;
         mDate = eDate;
+        mUrl = eUrl;
     }
-
-    /**
-     * Get the name of location
-     */
 
     public String getLocation() {
         return mLocation;
     }
 
-    /**
-     * Get the magnitude
-     */
     public double getMagnitude() {
         return mMagnitude;
     }
 
-    /**
-     * Get the date
-     */
     public long getDate() {
         return mDate;
+    }
+
+    public String getUrl() {
+        return mUrl;
     }
 }
