@@ -6,10 +6,10 @@ import java.util.Date;
 public class Earthquake {
 
     private String mLocation;
-    private Double mMagnitude;
-    private Date  mDate;
+    private double mMagnitude;
+    private long  mDate;
 
-    public Earthquake(String eLocation, Double eMagnitude, Date eDate)
+    public Earthquake(String eLocation, double eMagnitude, long eDate)
     {
         mLocation = eLocation;
         mMagnitude = eMagnitude;
@@ -27,14 +27,14 @@ public class Earthquake {
     /**
      * Get the magnitude
      */
-    public Double getMagnitude() {
+    public double getMagnitude() {
         return mMagnitude;
     }
 
     /**
      * Get the date
      */
-    public Date getDate() {
+    public long getDate() {
         return mDate;
     }
 }
