@@ -1,5 +1,4 @@
 package com.example.android.quakereport;
-import java.util.Date;
 
 
 
@@ -32,5 +31,10 @@ public class Earthquake {
 
     public String getUrl() {
         return mUrl;
+    }
+
+    @Override
+    public String toString() {
+        return mLocation;
     }
 }
